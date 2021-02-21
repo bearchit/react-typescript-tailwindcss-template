@@ -1,0 +1,36 @@
+[
+  {
+    "id": 1,
+    "title": "GraphQL",
+    "description": "GraphQL",
+    "blocks": [
+      {
+        "kind": "section",
+        "title": "Articles",
+        "items": []
+      },
+      {
+        "kind": "section",
+        "title": "Java",
+        "items": [
+          {
+            "title": "Home - DGS Framework",
+            "description": "",
+            "url": "https://netflix.github.io/dgs/"
+          }
+        ]
+      },
+      {
+        "kind": "section",
+        "title": "Go",
+        "items": [
+          {
+            "title": " gqlgen",
+            "description": "graphql servers the easy way",
+            "url": "https://gqlgen.com/"
+          }
+        ]
+      }
+    ]
+  }
+]
