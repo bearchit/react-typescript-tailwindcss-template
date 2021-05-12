@@ -1,17 +1,18 @@
 import React from "react";
 import "./App.css";
-import ListDetailScreen from "./ListDetail";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  Redirect,
+  Route,
+  Switch,
+} from "react-router-dom";
+import Dashboard from "./views/Dashboard";
 
 function Routes() {
   return (
     <Switch>
-      <Route path="/l/:listID">
-        <ListDetailScreen />
-      </Route>
-      {/*<Route path="/">*/}
-      {/*  <Dashboard />*/}
-      {/*</Route>*/}
+      <Route path="/dashboard" exact={true} component={Dashboard} />
+      <Redirect path="/" to="/dashboard" />
     </Switch>
   );
 }
