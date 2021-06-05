@@ -1,26 +1,15 @@
 import React from "react";
 import "./App.css";
-import {
-  BrowserRouter as Router,
-  Redirect,
-  Route,
-  Switch,
-} from "react-router-dom";
-import Dashboard from "./views/Dashboard";
-
-function Routes() {
-  return (
-    <Switch>
-      <Route path="/dashboard" exact={true} component={Dashboard} />
-      <Redirect path="/" to="/dashboard" />
-    </Switch>
-  );
-}
+import {BrowserRouter as Router,} from "react-router-dom";
+import BasicLayout from "./components/layout/BasicLayout";
+import Routes from "./Routes";
 
 function App() {
   return (
     <Router>
-      <Routes />
+      <BasicLayout>
+        <Routes />
+      </BasicLayout>
     </Router>
   );
 }

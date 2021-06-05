@@ -4,6 +4,14 @@ module.exports = {
   darkMode: false,
   theme: {
     extend: {},
+    flex: {
+      '1': '1 1 0%',
+      '2': '2 2 0%',
+      'initial': '0 1 auto',
+      'inherit': 'inherit',
+      'auto': '1 1 auto',
+      'none': 'none',
+    }
   },
   variants: {
     extend: {},
